@@ -1,0 +1,1099 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/*//////////  FONT OPHALEN  //////////*/
+@font-face {
+    font-family: 'Chinees';
+    src: url('../fonts/JAPANESE_2020.woff') format('woff');
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.75;
+    /*    font-size: 1.1em;*/
+}
+
+h1,
+h3 {
+    font-family: 'Chinees';
+    letter-spacing: 2;
+}
+
+
+/*//////////  TITEL  //////////*/
+body > header > section:nth-of-type(1) {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(images/achtergrond.jpg);
+    background-repeat: no-repeat;
+}
+
+body > header > section:nth-of-type(1) > img:nth-of-type(1) {
+    position: absolute;
+    width: 75%;
+    padding-left: 4em;
+    top: 8em;
+    z-index: 1;
+    opacity: 0;
+
+    animation-name: tekst;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tekst {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*
+body > header > section:nth-of-type(1) > h1 {
+    position: absolute;
+    font-size: 6.5em;
+    left: 1em;
+    opacity: 0;
+    z-index: 3;
+    top: 0;
+    letter-spacing: 5;
+
+    animation-name: tekst;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tekst {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+*/
+
+/*//////////  ZEE  //////////*/
+body > header > section:nth-of-type(1) > img:nth-of-type(2) {
+    position: absolute;
+    width: 100%;
+    top: 33%;
+    z-index: 1;
+}
+
+/*//////////  DRAAK  //////////*/
+body > header > section:nth-of-type(1) > img:nth-of-type(3) {
+    position: absolute;
+    width: 40%;
+    right: -30%;
+    z-index: 1;
+    top: 0;
+
+    animation-name: drakenboot_header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drakenboot_header {
+    0% {}
+
+    100% {
+        right: 0%;
+    }
+}
+
+/*//////////  GOLF LINKS  //////////*/
+body > header > section:nth-of-type(1) > img:nth-of-type(4) {
+    position: absolute;
+    width: 10%;
+    z-index: 1;
+    left: -2em;
+    top: 89.5%;
+    transform: rotate(2deg);
+}
+
+/*//////////  GOLF RECHTS  //////////*/
+body > header > section:nth-of-type(1) > img:nth-of-type(5) {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 20em;
+    top: 55%;
+    transform: rotate(2deg);
+}
+
+/*//////////  VUUR  //////////*/
+body > header > section:nth-of-type(1) > img:nth-of-type(6) {
+    position: absolute;
+    width: 10%;
+    z-index: 1;
+    left: 45%;
+    top: 41%;
+    z-index: 0;
+
+    animation-name: vuur;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes vuur {
+    0% {
+        transform: translateX(30em) rotate(40deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(3.5) rotate(45deg);
+        z-index: 0;
+    }
+}
+
+/*//////////  TEKST VERDER VERHAAL  //////////*/
+body > header > section:nth-of-type(1) > p:nth-of-type(1) {
+    position: absolute;
+    font-size: 1em;
+    color: black;
+    z-index: 10;
+    left: calc(50% - 7em);
+    top: 87%;
+    opacity: 0;
+
+    font-weight: bolder;
+    font-style: normal;
+    text-transform: uppercase;
+
+    animation-name: tekst_leesverder;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes tekst_leesverder {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*//////////  TEKST VERDER VERHAAL - PIJLTJES  //////////*/
+body > header > section:nth-of-type(1) > a > img:nth-of-type(1) {
+    width: 1.5%;
+    position: absolute;
+    left: calc(50% - 1.5em);
+    top: 93%;
+    opacity: 0;
+    z-index: 2;
+
+    animation-name: pijltje;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 6s;
+}
+
+/*//////////  TEKST VERDER VERHAAL - PIJLTJES  //////////*/
+body > header > section:nth-of-type(1) > a > img:nth-of-type(2) {
+    width: 1.5%;
+    position: absolute;
+    left: calc(50% - 1.5em);
+    top: 94.5%;
+    opacity: 0;
+    z-index: 2;
+
+    animation-name: pijltje;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 6s;
+}
+
+@keyframes pijltje {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(.3em);
+        opacity: 1;
+    }
+}
+
+/*//////////  ACHTERGROND WEDSTRIJD  //////////*/
+body > main > section:nth-of-type(1) {
+    width: 100vw;
+    height: 180vh;
+    background-image: url(images/wedstrijd.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/*//////////  STYLING WEDSTRIJD  //////////*/
+body > main > section:nth-of-type(1) > section {
+    display: grid;
+    margin: 0;
+    padding-left: 6%;
+    padding-right: 6%;
+    grid-template-columns: 1fr 1fr;
+    /*    grid-template-columns: auto auto;*/
+    gap: 1em;
+    top: 10em;
+    position: relative;
+}
+
+/*//////////  BOOTJES WEDSTRIJD  //////////*/
+body > main > section:nth-of-type(1) > section > img:nth-of-type(1) {
+    left: -5em;
+    position: relative;
+    width: 70%;
+    top: -7em;
+    grid-column: 1;
+
+    animation: float1 5s infinite;
+}
+
+@keyframes float1 {
+    0% {
+        transform: translatey(0px) translateX(-5px);
+    }
+
+    30% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px) translateX(-5px);
+    }
+}
+
+
+body > main > section:nth-of-type(1) > section > img:nth-of-type(2) {
+    position: relative;
+    width: 70%;
+    top: -38em;
+    left: 9em;
+    grid-column: 1;
+
+    animation: float2 5s infinite;
+}
+
+@keyframes float2 {
+    0% {
+        transform: translatey(0px) translateX(10px);
+    }
+
+    60% {
+        transform: translatey(20px);
+    }
+
+    100% {
+        transform: translatey(0px) translateX(10px);
+    }
+}
+
+/*//////////  TITEL WEDSTRIJD  //////////*/
+body > main > section:nth-of-type(1) > section > h3:nth-of-type(1) {
+    position: relative;
+    grid-column: 2;
+    font-size: 2em;
+    top: -18em;
+    color: white;
+    /*    letter-spacing: 3;*/
+}
+
+/*//////////  TEKST WEDSTRIJD  //////////*/
+body > main > section:nth-of-type(1) > section > p:nth-of-type(1) {
+    position: relative;
+    grid-column: 2;
+    top: -71em;
+    color: white;
+}
+
+body > main > section:nth-of-type(1) > section > p:nth-of-type(2) {
+    position: relative;
+    grid-column: 2;
+    top: -72em;
+    color: white;
+}
+
+/*//////////  BUTTON WEDSTRIJD  //////////*/
+body > main > section:nth-of-type(1) > section > button {
+    position: relative;
+    grid-column: 2;
+    background-color: #EB4E27;
+    padding: 1em;
+    width: 32%;
+    top: -70em;
+    left: 30%;
+    font-family: 'Poppins';
+    font-weight: 800;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/*//////////  STYLING WAAROM?  //////////*/
+body > main > section:nth-of-type(2) > section {
+    display: grid;
+    margin: 0;
+    padding-left: 6%;
+    padding-right: 6%;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    top: 10em;
+    position: relative;
+}
+
+/*//////////  TITEL WAAROM?  //////////*/
+body > main > section:nth-of-type(2) > section > h3 {
+    position: relative;
+    font-size: 2em;
+    top: -2em;
+    color: #313131;
+    width: 150%;
+}
+
+/*//////////  TEKST WAAROM?  //////////*/
+body > main > section:nth-of-type(2) > section > p:nth-of-type(1) {
+    position: relative;
+    grid-column: 1;
+    top: -8em;
+    color: #313131;
+}
+
+body > main > section:nth-of-type(2) > section > p:nth-of-type(2) {
+    position: relative;
+    grid-column: 2;
+    top: -8em;
+    color: #313131;
+}
+
+/*//////////  BUTTON VAN DE RIJSTBALLEN  //////////*/
+body > main > section:nth-of-type(2) > section > button {
+    position: relative;
+    background-color: #EB4E27;
+    padding: 1em;
+    width: 50%;
+    top: -10em;
+    left: 78%;
+    font-family: 'Poppins';
+    font-weight: 800;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+/*//////////  ZEE  //////////*/
+body > main > section:nth-of-type(2) {
+    width: 100vw;
+    height: 120vh;
+    background-image: url(images/zee_achter.png);
+    background-repeat: no-repeat;
+}
+
+/*//////////  QU YUAN VERDRINKT  //////////*/
+body > main > section:nth-of-type(2) > section:nth-of-type(3) > img:nth-of-type(1) {
+    position: relative;
+    top: -7em;
+    left: 4em;
+
+    animation-name: float1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/*//////////  ZEE  //////////*/
+body > main > section:nth-of-type(2) > section:nth-of-type(3) > img:nth-of-type(2) {
+    position: relative;
+    left: -42.6em;
+    top: 5.2em;
+}
+
+/*//////////  BOOTJE IN DE ZEE  //////////*/
+body > main > section:nth-of-type(2) > section:nth-of-type(3) > img:nth-of-type(3) {
+    position: relative;
+    left: 51em;
+    top: -36em;
+
+    animation-name: bootjeInvaren;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+/*
+@keyframes bootjeInvaren {
+    0% {
+        
+    }
+    
+    50% {
+        left:51em;
+    }
+    
+    80% {
+        left:51em;
+    }
+    
+    100% {
+        left:85em;
+    }
+}
+*/
+
+body > main > section:nth-of-type(2) > section:nth-of-type(3) > img:nth-of-type(4) {
+    position: relative;
+    top: -28em;
+    left: 34.3em;
+    width: 3%;
+    opacity: 0;
+}
+
+body > main > section:nth-of-type(2) > section:nth-of-type(3) > img:nth-of-type(4).gooien {
+    animation-name: gooienRijstbal;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.49, .99, .98, .92);
+    /*    animation-timing-function: cubic-bezier(.49,.99,.63,.86);*/
+    opacity: 0;
+}
+
+@keyframes gooienRijstbal {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateX(-20em) translateY(-5em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-30em) translateY(13em);
+    }
+}
+
+/*//////////  ZEE  //////////*/
+body > main > section:nth-of-type(2) > section:nth-of-type(3) > img:nth-of-type(5) {
+    position: relative;
+    top: -42.5em;
+    left: 54.5em;
+}
+
+/*//////////  ZEE AFKAPPEN  //////////*/
+body > main > section:nth-of-type(2) > div {
+    position: relative;
+    background-color: white;
+    width: 100em;
+    height: 6em;
+    left: -6em;
+    top: -38em;
+    z-index: 1;
+}
+
+/*//////////  OPENEN FEEST  //////////*/
+body > main > section:nth-of-type(3) {
+    width: 100vw;
+    height: 200vh;
+
+    background-image: url(images/achtergrond_openen.jpg);
+    background-repeat: no-repeat;
+}
+
+/*//////////  STYLING TEKST  //////////*/
+body > main > section:nth-of-type(3) > section {
+    display: grid;
+    margin: 0;
+    padding-left: 6%;
+    padding-right: 6%;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    position: relative;
+}
+
+/*//////////  TITEL OPENEN  //////////*/
+body > main > section:nth-of-type(3) > section:nth-of-type(1) > h3 {
+    /*    z-index: 5;*/
+    position: relative;
+    grid-column: 1;
+    width: 150%;
+    font-size: 2em;
+    top: .5em;
+    color: #313131;
+    z-index: 1;
+}
+
+/*//////////  TEKST OPENEN  //////////*/
+body > main > section:nth-of-type(3) > section:nth-of-type(1) > p {
+    position: relative;
+    grid-column: 1;
+    top: -1em;
+    color: #313131;
+}
+
+/*//////////  BUTTON OPENEN  //////////*/
+body > main > section:nth-of-type(3) > section:nth-of-type(1) > button {
+    position: relative;
+    grid-column: 1;
+    background-color: #EB4E27;
+    padding: 1em;
+    width: 40%;
+    /*    top: -8em;*/
+    top: 0em;
+    left: 25%;
+    font-family: 'Poppins';
+    font-weight: 800;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+/*//////////  POPPETJE OPENEN  //////////*/
+body > main > section:nth-of-type(3) > section:nth-of-type(2) > img:nth-of-type(1) {
+    position: relative;
+    grid-column: 2;
+    width: 35%;
+    top: -12em;
+    left: 3.4em;
+}
+
+/*//////////  KWAST  //////////*/
+body > main > section:nth-of-type(3) > section:nth-of-type(2) > img:nth-of-type(2) {
+    position: relative;
+    grid-column: 2;
+    top: -26.1em;
+    left: 12em;
+
+    animation-name: kwast;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes kwast {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/*//////////  DRAAK OPENEN  //////////*/
+body > main > section:nth-of-type(3) > section:nth-of-type(2) > img:nth-of-type(3) {
+    position: relative;
+    grid-column: 2;
+    top: -63em;
+    left: 15em;
+    width: 140%;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+/*//////////  WAAR KOMEN DE DRAKEN VANDAA?  //////////*/
+body > main > section:nth-of-type(4) > section {
+    display: grid;
+    margin: 0;
+    padding-left: 6%;
+    padding-right: 6%;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    position: relative;
+}
+
+/*//////////  TITEL WAAR VANDAAN  //////////*/
+body > main > section:nth-of-type(4) > section:nth-of-type(1) > h3 {
+    position: relative;
+    grid-column: 2;
+    width: 150%;
+    font-size: 2em;
+    top: -24em;
+    color: #313131;
+    left: -2em;
+}
+
+/*//////////  TEKST WAAR VANDAAN  //////////*/
+body > main > section:nth-of-type(4) > section:nth-of-type(1) > p {
+    position: relative;
+    grid-column: 2;
+    top: -50em;
+    left: -4em;
+    color: #313131;
+}
+
+/*//////////  TOTEM ADELAAR  //////////*/
+body > main > section:nth-of-type(4) > section:nth-of-type(2) > img:nth-of-type(1) {
+    position: relative;
+    grid-column: 1;
+    left: -6.5em;
+    top: -85.5em;
+    z-index: 2;
+    width: 100%;
+
+    animation-name: totem1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes totem1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(2deg);
+    }
+
+    66% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/*//////////  TOTEM TIJGER  //////////*/
+body > main > section:nth-of-type(4) > section:nth-of-type(2) > img:nth-of-type(2) {
+    position: relative;
+    grid-column: 1;
+    left: 6.5em;
+    top: -87em;
+    z-index: 1;
+    width: 33%;
+
+    animation-name: totem2;
+    animation-duration: 4s;
+    animation-delay: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes totem2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(-2deg);
+    }
+
+    66% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/*//////////  TOTEM SLANG  //////////*/
+body > main > section:nth-of-type(4) > section:nth-of-type(2) > img:nth-of-type(3) {
+    position: relative;
+    grid-column: 1;
+    left: 7.2em;
+    top: -88.2em;
+    z-index: 0;
+    width: 29%;
+
+    animation-name: totem3;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes totem3 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(2deg);
+    }
+
+    66% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*zee achtergrond*/
+body > main > section:nth-of-type(5) > img:nth-of-type(1) {
+    position: relative;
+    top: -93em;
+    z-index: -5;
+    background-color: red;
+}
+
+/*draak*/
+body > main > section:nth-of-type(5) > img:nth-of-type(2) {
+    position: relative;
+    top: -135em;
+    z-index: -5;
+    left: 50em;
+
+    animation-name: draakjeDobberen;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes draakjeDobberen {
+    0% {
+        transform: translatey(0px) translateX(10px);
+    }
+
+    60% {
+        transform: translatey(20px);
+    }
+
+    100% {
+        transform: translatey(0px) translateX(10px);
+    }
+}
+
+/*zee voorgrond*/
+body > main > section:nth-of-type(5) > img:nth-of-type(3) {
+    position: relative;
+    top: -142em;
+    z-index: -5;
+}
+
+/*wolkje*/
+body > main > section:nth-of-type(5) > img:nth-of-type(4) {
+    position: relative;
+    top: -220em;
+    z-index: -5;
+    width: 18%;
+    left: 75em;
+
+    animation-name: wolkje;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wolkje {
+    0% {
+        transform: translatex(0px) translatey(-5px);
+    }
+
+    50% {
+        transform: translatex(-20px);
+    }
+
+    100% {
+        transform: translatex(0px) translatey(-5px);
+    }
+}
+
+
+body > main > section:nth-of-type(5) > section:nth-of-type(1) {
+    display: grid;
+    margin: 0;
+    padding-left: 6%;
+    padding-right: 6%;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    position: relative;
+}
+
+body > main > section:nth-of-type(5) > section:nth-of-type(1) > h3 {
+    position: relative;
+    grid-column: 1;
+    font-size: 2em;
+    top: -113em;
+    color: #313131;
+}
+
+body > main > section:nth-of-type(5) > section:nth-of-type(1) > p {
+    position: relative;
+    grid-column: 1;
+    top: -228em;
+    color: #313131;
+}
+
+
+
+
+
+
+
+
+
+body > main > section:nth-of-type(6) > section:nth-of-type(1) {
+    display: grid;
+    margin: 0;
+    padding-left: 6%;
+    padding-right: 6%;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    position: relative;
+}
+
+/*Hoe werkt het?*/
+body > main > section:nth-of-type(6) > section:nth-of-type(1) > h3 {
+    position: relative;
+    grid-column: 1;
+    width: 150%;
+    font-size: 2em;
+    top: -101.5em;
+    color: #313131;
+    z-index: 5;
+}
+
+/*Tekst hoe werkt het?*/
+body > main > section:nth-of-type(6) > section:nth-of-type(1) > p:nth-of-type(1) {
+    position: relative;
+    grid-column: 1;
+    top: -206.5em;
+    color: #313131;
+}
+
+body > main > section:nth-of-type(6) > section:nth-of-type(1) > p:nth-of-type(2) {
+    position: relative;
+    grid-column: 2;
+    top: -206.5em;
+    color: #313131;
+}
+
+
+body > main > section:nth-of-type(6) > section:nth-of-type(2) > img:nth-of-type(1) {
+    position: relative;
+    grid-column: 2;
+    top: -200em;
+    color: #313131;
+}
+
+body > main > section:nth-of-type(6) > section:nth-of-type(2) > img:nth-of-type(2) {
+    position: relative;
+    top: -250em;
+    width: 49%;
+    left: 31em;
+    opacity: 0;
+
+    animation-name: draakie;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes draakie {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body > main > section:nth-of-type(6) > section:nth-of-type(2) > img:nth-of-type(3) {
+    position: relative;
+    top: -256em;
+    left: 4.7em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body > main > section:nth-of-type(1) > section > img:nth-of-type(1).ikGa {
+    animation: naarBenedenRood 5s forwards;
+}
+
+@keyframes naarBenedenRood {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(230vh);
+    }
+}
+
+body > main > section:nth-of-type(1) > section > img:nth-of-type(2).ikGa {
+    animation: naarBenedenBlauw 5s forwards;
+}
+
+@keyframes naarBenedenBlauw {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(170vh);
+    }
+}
+
+/*//////////  OOGVERF DRAAK OPENEN  //////////*/
+body > main > section:nth-of-type(3) > section:nth-of-type(2) > img:nth-of-type(4).inkleuren {
+    position: relative;
+    top: -89.4em;
+    left: 61.5em;
+    z-index: 2;
+    opacity: 0;
+
+    animation-name: kleuren;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes kleuren {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+body > header > div > div > h3 {
+    font-size: 2em;
+}
+
+body > header > div > div > p {
+    font-size: 1em;
+}
+
+#myBtn {
+    position: absolute;
+    background-color: #EB4E27;
+    color: white;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    left: 1em;
+    top: 1em;
+    z-index: 15;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 15;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    position: relative;
+    top: -10em;
+    background-color: #FDF9F1;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 40px;
+    border: 1px solid #888;
+    width: 80%;
+    z-index: 15;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    position: relative;
+    top:-.75em;
+    left:.75em;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 15;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 15;
+}
